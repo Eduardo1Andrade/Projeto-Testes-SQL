@@ -95,3 +95,93 @@ SELECT distinct categoria from produto
 where marca IN ('Apple', 'Samsung') AND
 estoque BETWEEN 5 AND 15;
 
+--1
+
+SELECT * FROM produto
+WHERE preco BETWEEN 1500 AND 3000;
+
+--2
+
+SELECT * FROM produto
+WHERE categoria IN('Celular','Notebook','TV')
+
+--3
+
+SELECT * FROM produto
+WHERE categoria <> 'periferico';
+
+--4
+SELECT * FROM produto
+WHERE nome ILIKE 'Smart%';
+
+--5
+
+SELECT * FROM produto
+WHERE nome ILIKE 'Mouse%';
+
+--6
+
+SELECT * FROM produto
+WHERE marca IN('Samsung','Apple');
+
+--7
+
+SELECT * FROM produto
+WHERE estoque = 0;
+
+--8
+
+SELECT * FROM produto
+WHERE descricao IS NOT NULL;
+
+--9
+
+SELECT * FROM produto
+WHERE marca ILIKE '%logitech%'
+
+--10
+SELECT DISTINCT categoria FROM produto
+
+--11
+SELECT * FROM produto
+WHERE preco BETWEEN 1000 AND 4000
+
+--12
+SELECT * FROM produto
+WHERE marca = 'Apple' AND preco < 5000;
+
+--13
+SELECT * FROM produto
+WHERE marca IN('Samsung','LG') AND estoque > 5;
+
+--14
+SELECT * FROM produto
+WHERE nome ILIKE '%i%' AND preco < 3000;
+
+--15
+SELECT * FROM produto
+WHERE categoria NOT IN('Celular','TV');
+
+--16
+SELECT * FROM produto
+ORDER BY nome ASC
+
+--17
+SELECT * FROM produto
+ORDER BY nome DESC
+
+--18
+SELECT * FROM produto
+ORDER BY preco DESC
+
+--19
+SELECT * FROM produto
+ORDER BY preco ASC
+
+--20
+SELECT * FROM produto
+WHERE marca = 'Apple' ORDER BY nome DESC
+
+--21
+
+WHERE categoria NOT IN('Celular','TV')
